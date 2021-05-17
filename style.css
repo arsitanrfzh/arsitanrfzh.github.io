@@ -1,0 +1,32 @@
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #FFE4E1;
+}
+
+#skill {
+    background-color: #FFE4E1;
+}
+
+.background-footer {
+    background-color: #e7008a;
+}
+
+#contact {
+    background-color: #fff;
+}
+
+#sosmed {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#sosmed i {
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}
+
+section {
+    padding-top: 5rem;
+}
