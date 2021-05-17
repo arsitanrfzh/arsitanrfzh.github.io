@@ -13,6 +13,9 @@
      <!-- Bootstrap icons -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -50,7 +53,7 @@
       <section class="jumbotron text-center">
           <img src="img/photo6124970982025309202.jpg" alt="foto profile" width="250" class="rounded-circle img-thumbnail">
         <h1 class="display-4">Arsita Nurfauziah</h1>
-        <p class="lead">College Student | Junior Front-end Developer</p>
+        <p class="lead"></p>
         <div id="sosmed" style="margin: 24px 0;">
           <a href="https://www.linkedin.com/in/arsita-nurfauziah-637911193/"><i class="fa fa-linkedin"></i></a>
           <a href="https://github.com/arsitanrfzh/"><i class="fa fa-github"></i></a>
@@ -70,10 +73,10 @@
                   </div>
               </div>
               <div class="row justify-content-center fs-5 text-center">
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
                     <p>Arsita Nurfauziah has just finished the front-end boot camp with Skilvul X Plan Indonesia and wants to continue learning to improve her skills</p>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <p>She is a junior front-end developer with hands-on experience final project of bootcamp and working with the team using Github to build a website that is already responsive</p> 
                   </div>
               </div>
@@ -92,7 +95,7 @@
               </div>
               <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./img/projects/1.jpg" class="card-img-top" alt="programming">
                     <div class="card-body">
                       <h2 class="text-center">Programming</h2>
@@ -101,7 +104,7 @@
                   </div>
                 </div>                
                 <div class="col-md-4 mb-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
                     <img src="./img/projects/2.jpg" class="card-img-top" alt="programming">
                     <div class="card-body">
                       <h2 class="text-center">Design</h2>
@@ -162,6 +165,22 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Scripts AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scripts Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration: 2, delay: 1.5, text: 'College Student | Junior Front-end Developer'});
+      gsap.from('.jumbotron img', {duration: 1, y: -100, opacity: 0 });
+      gsap.from('.display-4', {duration: 1, x: -50, opacity: 0, delay: 0.5 });
+    </script>
 
     <!-- Scripts Contact Form -->
     <script>
