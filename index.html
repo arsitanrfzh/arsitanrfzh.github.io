@@ -1,214 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-    crossorigin="anonymous">
-
-     <!-- Bootstrap icons -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-     <!-- AOS -->
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>My Portfolio | Arsita Nurfauziah</title>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | Arsita Nurfauziah</title>
   </head>
-  <body id="home">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color:#e7008a;">
-        <div class="container">
-          <a class="navbar-brand" href="#">Arsita Nurfauziah</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skill">Skill</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-outline-dark" href="#contact" role="button">Contact Me</a>
-              </li>
-            </ul>
-          </div>
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Arsita Nurfauziah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link-button btn btn-cv"
+                href="https://drive.google.com/file/d/1WHPFCnoHlwwJ5C9kCE92NYmoP8cdd5-o/view?usp=sharing"
+                role="button"
+                target="_blank"
+              >
+                My CV
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link-button btn btn-portfolio"
+                href="https://drive.google.com/file/d/1n_11roeO_o4LY6pGxcHVViIrlGIpLxnP/view?usp=sharing"
+                role="button"
+                target="_blank"
+              >
+                Portfolio
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Jumbotron Start -->
-      <section class="jumbotron text-center">
-          <img src="img/photo6124970982025309202.jpg" alt="foto profile" width="250" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">Arsita Nurfauziah</h1>
-        <p class="lead"></p>
-        <div id="sosmed" style="margin: 24px 0;">
-          <a href="https://www.linkedin.com/in/arsita-nurfauziah-637911193/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/arsitanrfzh/"><i class="fa fa-github"></i></a>
-          <a href="https://instagram.com/arsitanrfzh/"><i class="fa fa-instagram"></i></a>
-          <a href="https://facebook.com/arsita.nurfauziah/"><i class="fa fa-facebook"></i></a>
       </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,149.3C672,149,768,203,864,213.3C960,224,1056,192,1152,192C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      </section>
-      <!-- Jumbotron End -->
+    </nav>
+    <!-- Navbar End -->
 
-      <!-- About Start -->
-      <section id="about">
-          <div class="container">
-              <div class="row text-center mb-4">
-                  <div class="col">
-                      <h2>About Me</h2>
-                  </div>
-              </div>
-              <div class="row justify-content-center fs-5 text-center">
-                  <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
-                    <p>Arsita Nurfauziah has just finished the front-end boot camp with Skilvul X Plan Indonesia and wants to continue learning to improve her skills</p>
-                  </div>
-                  <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <p>She is a junior front-end developer with hands-on experience final project of bootcamp and working with the team using Github to build a website that is already responsive</p> 
-                  </div>
-              </div>
+    <!-- Jumbotron Start -->
+    <section id="home" class="jumbotron text-center mt-5 pt-5">
+      <div class="container">
+        <img
+          src="./img/profile-img.png"
+          alt="profile photo"
+          class="rounded-circle img-thumbnail"
+        />
+        <h1 class="display-4 mt-3">Arsita Nurfauziah</h1>
+        <p class="lead">
+          Information Systems student | Web & Backend Developer
+        </p>
+        <div id="sosmed" class="my-3">
+          <a
+            href="https://www.linkedin.com/in/arsita-nurfauziah-637911193/"
+            class="mx-2"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://github.com/arsitanrfzh/" class="mx-2"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a href="https://instagram.com/arsitanrfzh/" class="mx-2"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://facebook.com/arsita.nurfauziah/" class="mx-2"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Jumbotron End -->
+
+    <!-- About Start -->
+    <section id="about" class="py-5 bg-light my-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>About Me</h2>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFE4E1" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,149.3C672,149,768,107,864,85.3C960,64,1056,64,1152,85.3C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      </section>
-      <!-- About End -->
-
-      <!-- Skill Start -->
-      <section id="skill">
-          <div class="container">
-              <div class="row text-center mb-4">
-                  <div class="col">
-                      <h2>Skill</h2>
-                  </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                  <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./img/projects/1.jpg" class="card-img-top" alt="programming">
-                    <div class="card-body">
-                      <h2 class="text-center">Programming</h2>
-                      <p class="card-text text-center">Front-end (HTML,CSS,Javascript, ReactJs, NodeJs)</p>
-                    </div>
-                  </div>
-                </div>                
-                <div class="col-md-4 mb-3">
-                  <div class="card" style="width: 18rem;" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
-                    <img src="./img/projects/2.jpg" class="card-img-top" alt="programming">
-                    <div class="card-body">
-                      <h2 class="text-center">Design</h2>
-                      <p class="card-text text-center">Designing using canva and are learning to use figma</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right">
+            <p>
+              Result-oriented Information Systems student proficient in PHP,
+              JavaScript, and Java. Developed advanced skills through
+              internships as a Web Developer and Backend Developer, focusing on
+              web development using Bootstrap, HTML, CSS, and JavaScript, and
+              backend development with Java, SQL, and Quarkus.
+            </p>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,69.3C384,64,480,32,576,58.7C672,85,768,171,864,197.3C960,224,1056,192,1152,181.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      <!-- Skill End -->
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Demonstrated ability to work independently and collaboratively,
+              consistently delivering high-quality results and meeting project
+              deadlines. Committed to continuous learning and skill enhancement
+              in the technology sector.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
 
-      <!-- Contact Me Start -->
-      <section id="contact">
-        <div class="container">
-          <div class="row text-center mb-4">
-            <div class="col">
-              <h2>Contact Me</h2>
+    <!-- Skills Start -->
+    <section id="skills" class="py-5 my-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card skill-card" data-aos="flip-left">
+              <div class="card-img-container">
+                <img
+                  src="./img/frontend.png"
+                  class="card-img-top"
+                  alt="Frontend Development"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center">Frontend Development</h3>
+                <p class="card-text text-center">
+                  Building responsive and interactive user interfaces using
+                  HTML, CSS, JavaScript, and Bootstrap.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                <strong>Thankyou!</strong> we have received your message.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card skill-card"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
+              <div class="card-img-container">
+                <img
+                  src="./img/backend.png"
+                  class="card-img-top"
+                  alt="Backend Development"
+                />
               </div>
-              <form name="contact-form">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="3" name="pesan"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark btn-kirim">Submit</button>
-                <button class="btn btn-secondary btn-loading d-none" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Loading...
-                </button>
-              </form>
+              <div class="card-body">
+                <h3 class="card-title text-center">Backend Development</h3>
+                <p class="card-text text-center">
+                  Developing robust and scalable server-side applications using
+                  PHP, Java, SQL, phpMyAdmin, and XAMPP.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="card skill-card"
+              data-aos="flip-left"
+              data-aos-delay="400"
+            >
+              <div class="card-img-container">
+                <img
+                  src="./img/prototype.png"
+                  class="card-img-top"
+                  alt="Other Skills"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title text-center">Prototyping & Tools</h3>
+                <p class="card-text text-center">
+                  Proficient in Figma for prototyping,
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,149.3C672,149,768,203,864,213.3C960,224,1056,192,1152,192C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      </section>
-      <!-- Contact Me End -->
+      </div>
+    </section>
+    <!-- Skills End -->
 
-      <!-- Footer start -->
-      <footer class="background-footer text-white text-center pb-5">
-        <p>Build with <i class="bi bi-suit-heart-fill"></i> by <a href="https://github.com/arsitanrfzh" class="text-white fw-bold"> Arsita Nurfauziah</a></p>
-      </footer>
-      <!-- Footer End -->
+    <!-- Contact Start -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div
+              class="alert alert-success alert-dismissible fade show d-none my-alert"
+              role="alert"
+            >
+              <strong>Thank you!</strong> We have received your message.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form
+              name="contact-form"
+              method="POST"
+              action="https://script.google.com/macros/s/AKfycbz5ZwyvyPSfmxztRnDNb7EoH14NoPza1NiLJw2J92lmbl2su5fQeRy1lk776u1VqR_N/exec"
+              novalidate
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                Send
+              </button>
+              <button
+                class="btn btn-primary btn-loading d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Sending...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Footer Start -->
+    <footer class="text-white text-center py-3 bg-primary-custom">
+      <p class="footer-text">
+        Created with <i class="fas fa-heart"></i> by
+        <a
+          href="https://www.linkedin.com/in/arsita-nurfauziah-637911193/"
+          class="text-white fw-bold"
+          >Arsita Nurfauziah</a
+        >
+      </p>
+    </footer>
+    <!-- Footer End -->
 
-    <!-- Scripts AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
-    <!-- Scripts Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', {duration: 2, delay: 1.5, text: 'College Student | Junior Front-end Developer'});
-      gsap.from('.jumbotron img', {duration: 1, y: -100, opacity: 0 });
-      gsap.from('.display-4', {duration: 1, x: -50, opacity: 0, delay: 0.5 });
-    </script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz5ZwyvyPSfmxztRnDNb7EoH14NoPza1NiLJw2J92lmbl2su5fQeRy1lk776u1VqR_N/exec";
+      const form = document.forms["contact-form"];
+      const btnSubmit = document.querySelector(".btn-submit");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
 
-    <!-- Scripts Contact Form -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxW39oHPzW7ofwNeScWPw26mBUr8ZDg1mv-WyhW8lHLZ1w4SejiaKebSoYTYWV_UTm5mA/exec'
-      const form = document.forms['contact-form']
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        // Ketika tombol submit diklik
-        // Tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => { 
-            // Tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // Tampilkan Alert
-            myAlert.classList.toggle('d-none');
-            // Reset form
-            form.reset();
-            console.log('Success!', response)
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (form.checkValidity() === false) {
+          e.stopPropagation();
+          form.classList.add("was-validated");
+          return;
+        }
+        btnLoading.classList.toggle("d-none");
+        btnSubmit.classList.toggle("d-none");
+        const formData = new FormData(form);
+
+        fetch(scriptURL, { method: "POST", body: formData })
+          .then((response) => {
+            if (response.ok) {
+              btnLoading.classList.toggle("d-none");
+              btnSubmit.classList.toggle("d-none");
+              myAlert.classList.remove("d-none");
+              form.reset();
+              console.log("Success!", response);
+            } else {
+              throw new Error("Network response was not ok.");
+            }
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => {
+            btnLoading.classList.toggle("d-none");
+            btnSubmit.classList.toggle("d-none");
+            console.error("Error!", error.message);
+          });
+      });
     </script>
   </body>
 </html>
