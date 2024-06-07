@@ -1,187 +1,216 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe2f5 !important;
 }
 
-/* Navbar dan Footer */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 16px;
+  margin-right: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #8f1767;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.navbar .btn {
+  margin-left: 15px;
+}
+
+.navbar .btn-danger {
+  background-color: #aa0552;
+  border-color: #aa0552;
+}
+
+.navbar .btn-danger:hover {
+  background-color: #ff87b9;
+}
+
+.navbar .btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.navbar .btn-dark:hover {
+  background-color: #657c97;
+}
+
+/* Custom background color */
 .bg-primary-custom {
-    background-color: #2a2a2a !important;
+  background-color: #ff8bb1 !important;
 }
 
-.navbar-brand, .nav-link, .footer-text {
-    color: #ffffff !important;
+/* About Section */
+.about-section {
+  padding: 60px 0; /* Atau sesuaikan sesuai kebutuhan */
 }
 
-.nav-link:hover {
-    color: #ffcc00 !important;
+.about-section .row {
+  display: flex; /* Aktifkan flexbox */
+  align-items: center; /* Atur perataan vertikal ke tengah */
 }
 
-.nav-link-button:hover {
-    color:#8ec5ff;
+.about-section img {
+  max-width: 200px; /* Atau sesuaikan ukuran foto */
+  border-radius: 50%;
+  display: flex;
+  margin-left: 60px;
 }
 
-/* Gaya khusus untuk tombol CV dan Portfolio */
-.navbar .btn-cv,
-.navbar .btn-portfolio {
-    color: #fff;
-    background-color: #007bff; /* Warna biru */
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    border-radius: 25px; /* Sudut membulat */
-    margin-left: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.social-icons-below i {
+  color: #a8004f;
+  transition: color 0.3s ease;
+  margin-bottom: 5px; /* Tarik ikon ke atas (opsional) */
+  margin-top: 10px;
 }
 
-.navbar .btn-cv:hover,
-.navbar .btn-portfolio:hover {
-    background-color: #0056b3; /* Warna biru lebih gelap */
-    transform: translateY(-3px); /* Tombol terangkat sedikit saat dihover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow lebih besar saat dihover */
+.social-icons-below i:hover {
+  color: #ff83ac;
 }
 
-.navbar .btn-cv:active,
-.navbar .btn-portfolio:active {
-    background-color: #004494; /* Warna biru lebih gelap lagi */
-    transform: translateY(0); /* Tombol kembali ke posisi awal saat ditekan */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow kembali ke ukuran awal */
+/* Skills Section */
+.skills-section {
+  padding: 60px 0;
 }
 
-/* Jumbotron */
-.jumbotron {
-    padding: 5rem 0;
-    background-color: #f8f9fa;
-}
-
-.jumbotron img {
-    width: 200px;
-    height: 350px;
-}
-
-#sosmed a {
-    color: #2a2a2a;
-}
-
-#sosmed a:hover {
-    color: #ffcc00;
-}
-
-/* Section */
-.section {
-    padding: 5rem 0;
-}
-
-/* About */
-#about {
-    background-color: #f8f9fa;
-}
-
-/* Skill Cards */
 .skill-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.skill-card .card-img-container {
-    overflow: hidden;
-    height: 200px;
-}
-
-.skill-card .card-img-top {
-    transition: transform 0.3s;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.skill-card:hover .card-img-top {
-    transform: scale(1.1);
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    font-weight: 600;
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .card-text {
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* Ensure all cards have the same height */
 .row > .col-md-4 {
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Zoom effect on skill card image */
+.img-container {
+  overflow: hidden;
+}
+
+.img-container img {
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .img-container img {
+  transform: scale(1.1);
+}
+
+/* Text Justify */
+.text-justify {
+  text-align: justify;
 }
 
 /* Contact */
 #contact .form-label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #contact .form-control:invalid {
-    border-color: #dc3545;
+  border-color: #dc3545;
 }
 
 #contact .form-control:invalid:focus {
-    box-shadow: 0 0 5px rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.25);
 }
 
 #contact .btn-submit {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: none;
+  background-color: #aa0552;
+  color: #ffffff;
+  border: none;
 }
 
 #contact .btn-submit:hover {
-    background-color: #333333;
-    color: #ffffff;
+  background-color: #ff87b9;
+  color: #ffffff;
 }
 
 #contact .btn-loading {
-    background-color: #6c757d;
-    color: #ffffff;
-    border: none;
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
 }
 
 .alert-dismissible .btn-close {
-    background-color: transparent;
-    border: none;
-    font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
 }
 
 /* Footer */
-footer {
-    background-color: #2a2a2a;
+.footer {
+  background-color: #ff8bb1;
+  color: #fff;
+  padding-top: 2rem; /* Tambahkan sedikit padding di bagian atas */
 }
 
-.footer-text {
-    color: #ffffff !important;
+.footer .col-md-4 {
+  display: flex; /* Atur setiap kolom menjadi flexbox */
+  flex-direction: column; /* Susun item dalam kolom secara vertikal */
+  align-items: center; /* Pusatkan item secara horizontal */
 }
 
-.footer-text a {
-    color: #ffcc00;
+/* Hanya di layar besar (MD ke atas) */
+@media (min-width: 768px) {
+  .footer .col-md-3 {
+    align-items: flex-start; /* Kembalikan ke default (left) */
+  }
 }
 
-.footer-text a:hover {
-    color: #ffffff;
+.footer h6 {
+  font-size: 1.5rem; /* Perbesar sedikit judul */
+  font-weight: 600;
+}
+
+.footer ul {
+  padding-left: 0; /* Hapus padding default dari ul */
+  text-align: left;
+  list-style: none;
+}
+
+.icon-small {
+  font-size: 1.3rem; /* Adjust the size as needed */
+}
+
+/* Optional: Ensure proper spacing around icons */
+.social-icons a {
+  margin: 0 4px; /* Adjust as needed */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.row.mt-4 {
+  position: relative; /* Aktifkan position relative */
+  top: 20px; /* Geser ke bawah 50px */
 }
