@@ -1,77 +1,81 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffe2f5 !important;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  font-weight: 16px;
-  margin-right: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #8f1767;
+  color: #1abc9c; 
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-left: 15px;
-}
-
-.navbar .btn {
-  margin-left: 15px;
-}
-
-.navbar .btn-danger {
-  background-color: #aa0552;
-  border-color: #aa0552;
-}
-
-.navbar .btn-danger:hover {
-  background-color: #ff87b9;
-}
-
-.navbar .btn-dark {
-  background-color: #343a40;
-  border-color: #343a40;
-}
-
-.navbar .btn-dark:hover {
-  background-color: #657c97;
-}
-
-/* Custom background color */
 .bg-primary-custom {
-  background-color: #ff8bb1 !important;
+  background-color: #9b59b6 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #9b59b6, #39e3c1);
+  color: #ffffff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section button {
+  padding: 0.5rem 1rem;
 }
 
 /* About Section */
 .about-section {
-  padding: 60px 0; /* Atau sesuaikan sesuai kebutuhan */
-}
-
-.about-section .row {
-  display: flex; /* Aktifkan flexbox */
-  align-items: center; /* Atur perataan vertikal ke tengah */
+  padding: 60px 0;
 }
 
 .about-section img {
-  max-width: 200px; /* Atau sesuaikan ukuran foto */
+  max-width: 250px;
   border-radius: 50%;
-  display: flex;
-  margin-left: 60px;
 }
 
 .social-icons-below i {
-  color: #a8004f;
+  color: #9b59b6;
   transition: color 0.3s ease;
-  margin-bottom: 5px; /* Tarik ikon ke atas (opsional) */
-  margin-top: 10px;
 }
 
 .social-icons-below i:hover {
-  color: #ff83ac;
+  color: #39e3c1;
 }
 
 /* Skills Section */
@@ -79,65 +83,89 @@ body {
   padding: 60px 0;
 }
 
+/* Skill Card Layout */
 .skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+  padding: 20px;
 }
 
 .skill-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.card-title {
-  margin-top: 15px;
+.skill-card h5 {
   font-size: 1.25rem;
-  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.card-text {
-  margin-top: 10px;
-  font-size: 1rem;
-  font-weight: 400;
+.skill-card p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
-/* Ensure all cards have the same height */
-.row > .col-md-4 {
+.skill-card .progress {
+  background-color: #ecf0f1;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skill-card .progress-bar {
+  border-radius: 5px;
+}
+
+/* Ensure all columns have the same height */
+.skills-section .row > .col-md-4 {
   display: flex;
   align-items: stretch;
 }
 
-.card {
+.skills-section .skill-card {
   flex: 1;
-  display: flex;
+}
+
+
+/* Projects Section */
+.projects-section img {
+  width: 100%; /* Gambar akan memenuhi kolom */
+  height: 300px; /* Tinggi seragam */
+  object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  border-radius: 10px; /* Opsional: Tambahkan sudut bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Tambahkan bayangan */
+}
+.projects-section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects-section .col-md-4 {
+  display: flex; /* Pastikan kolom fleksibel */
   flex-direction: column;
+  align-items: center; /* Pusatkan gambar dan teks */
 }
 
-/* Zoom effect on skill card image */
-.img-container {
-  overflow: hidden;
+.projects-section h6 {
+  margin-top: 10px;
+  text-align: center;
 }
 
-.img-container img {
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover .img-container img {
-  transform: scale(1.1);
-}
-
-/* Text Justify */
-.text-justify {
-  text-align: justify;
-}
-
-/* Contact */
+/* Contact Section */
 #contact .form-label {
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 #contact .form-control:invalid {
-  border-color: #dc3545;
+  border-color: #9b59b6;
 }
 
 #contact .form-control:invalid:focus {
@@ -145,13 +173,13 @@ body {
 }
 
 #contact .btn-submit {
-  background-color: #aa0552;
+  background-color: #2a2a2a;
   color: #ffffff;
   border: none;
 }
 
 #contact .btn-submit:hover {
-  background-color: #ff87b9;
+  background-color: #39e3c1;
   color: #ffffff;
 }
 
@@ -169,48 +197,17 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #ff8bb1;
-  color: #fff;
-  padding-top: 2rem; /* Tambahkan sedikit padding di bagian atas */
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
-.footer .col-md-4 {
-  display: flex; /* Atur setiap kolom menjadi flexbox */
-  flex-direction: column; /* Susun item dalam kolom secara vertikal */
-  align-items: center; /* Pusatkan item secara horizontal */
+.footer a {
+  color: #39e3c1;
+  transition: color 0.3s ease;
 }
 
-/* Hanya di layar besar (MD ke atas) */
-@media (min-width: 768px) {
-  .footer .col-md-3 {
-    align-items: flex-start; /* Kembalikan ke default (left) */
-  }
-}
-
-.footer h6 {
-  font-size: 1.5rem; /* Perbesar sedikit judul */
-  font-weight: 600;
-}
-
-.footer ul {
-  padding-left: 0; /* Hapus padding default dari ul */
-  text-align: left;
-  list-style: none;
-}
-
-.icon-small {
-  font-size: 1.3rem; /* Adjust the size as needed */
-}
-
-/* Optional: Ensure proper spacing around icons */
-.social-icons a {
-  margin: 0 4px; /* Adjust as needed */
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
-.row.mt-4 {
-  position: relative; /* Aktifkan position relative */
-  top: 20px; /* Geser ke bawah 50px */
+.footer a:hover {
+  color: #ff6b81;
 }
